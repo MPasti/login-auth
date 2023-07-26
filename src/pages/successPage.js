@@ -36,7 +36,7 @@ function Success() {
   return (
     <div className="Success">
       <header className="Success-header">
-        {Object.keys(user).length !== 0 ? (
+        {user ? (
           <>
             <h1>Logado com sucesso</h1>
             <button onClick={signOut}> Sair </button>
